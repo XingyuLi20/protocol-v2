@@ -41,7 +41,7 @@ makeSuite('LendingPoolAddressesProvider', (testEnv: TestEnv) => {
     ).to.be.revertedWith(INVALID_OWNER_REVERT_MSG);
   });
 
-  it('Tests adding  a proxied address with `setAddressAsProxy()`', async () => {
+  it('Tests adding a proxied address with `setAddressAsProxy()`', async () => {
     const { addressesProvider, users } = testEnv;
     const { INVALID_OWNER_REVERT_MSG } = ProtocolErrors;
 
